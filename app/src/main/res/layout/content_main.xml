@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.learn2develop.checkers.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#7bd0fe">
+
+    <com.learn2develop.checkers.view.Board
+        android:id="@+id/board"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:onClick="boardClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_below="@+id/board"
+        android:layout_centerHorizontal="true"
+        android:text="turn"
+        android:textColor="#f90606" />
+
+
+</RelativeLayout>

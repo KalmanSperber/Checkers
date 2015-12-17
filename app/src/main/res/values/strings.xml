@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Checkers</string>
+    <string name="action_settings">How to play checkers</string>
+    <string name="refresh" />
+</resources>
